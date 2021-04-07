@@ -17,8 +17,7 @@ pipeline {
       }
     }
     stage ('Apply resources') {
-      steps {
-        when {
+      when {
           branch 'master'
         }
         steps {
@@ -34,5 +33,4 @@ https://kubernetes.default.svc:443'
       }
     }
   }
-}
 }
